@@ -1,0 +1,101 @@
+
+D, [2013-10-17T00:14:53.651497 #19096] DEBUG -- :   [1m[36m (137.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2013-10-17T00:17:07.525154 #23460] DEBUG -- :   [1m[36m (12.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2013-10-17T00:17:50.928637 #23676] DEBUG -- :   [1m[36mSQL (10.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:17:51.063645 #23676] DEBUG -- :   [1m[35mSQL (81.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 12], ["name", "tony"]]
+D, [2013-10-17T00:17:51.064645 #23676] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:17:51.065645 #23676] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2013-10-17T00:18:42.785603 #13968] DEBUG -- :   [1m[36mSQL (10.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:18:42.816605 #13968] DEBUG -- :   [1m[35mSQL (17.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 12], ["name", "tony"]]
+D, [2013-10-17T00:18:42.817605 #13968] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:18:42.818605 #13968] DEBUG -- :   [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2013-10-17T00:23:09.697869 #24400] DEBUG -- :   [1m[36mSQL (13.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:23:09.724871 #24400] DEBUG -- :   [1m[35mSQL (8.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 10], ["name", "candy"]]
+D, [2013-10-17T00:23:09.726871 #24400] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:23:09.727871 #24400] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2013-10-17T00:24:03.659956 #19128] DEBUG -- :   [1m[36mSQL (9.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:24:03.698958 #19128] DEBUG -- :   [1m[35mSQL (25.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 10], ["name", "candy"]]
+D, [2013-10-17T00:24:03.699958 #19128] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:24:03.699958 #19128] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  BEGIN
+D, [2013-10-17T00:24:03.782963 #19128] DEBUG -- :   [1m[36mSQL (82.0ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = ?[0m  [["id", 4]]
+D, [2013-10-17T00:24:03.783963 #19128] DEBUG -- :   [1m[35m (0.0ms)[0m  COMMIT
+D, [2013-10-17T00:24:03.784963 #19128] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2013-10-17T00:25:53.112216 #20804] DEBUG -- :   [1m[36mSQL (17.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:25:53.152219 #20804] DEBUG -- :   [1m[35mSQL (15.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 10], ["name", "candy"]]
+D, [2013-10-17T00:25:53.153219 #20804] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:25:53.153219 #20804] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  BEGIN
+D, [2013-10-17T00:25:53.155219 #20804] DEBUG -- :   [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = ?[0m  [["id", 5]]
+D, [2013-10-17T00:25:53.156219 #20804] DEBUG -- :   [1m[35m (1.0ms)[0m  COMMIT
+D, [2013-10-17T00:25:53.157219 #20804] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2013-10-17T00:25:53.159219 #20804] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-10-17T00:27:02.203168 #19464] DEBUG -- :   [1m[36mSQL (10.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:27:02.241170 #19464] DEBUG -- :   [1m[35mSQL (23.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 10], ["name", "candy"]]
+D, [2013-10-17T00:27:02.242170 #19464] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:27:02.244170 #19464] DEBUG -- :   [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2013-10-17T00:27:02.245170 #19464] DEBUG -- :   [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-10-17T00:27:02.289173 #19464] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'candy' LIMIT 1
+D, [2013-10-17T00:28:22.486760 #21760] DEBUG -- :   [1m[36mSQL (14.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T00:28:22.523762 #21760] DEBUG -- :   [1m[35mSQL (15.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 10], ["name", "candy"]]
+D, [2013-10-17T00:28:22.523762 #21760] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T00:28:22.525762 #21760] DEBUG -- :   [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2013-10-17T00:28:22.527762 #21760] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-10-17T00:28:22.544763 #21760] DEBUG -- :   [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'candy' LIMIT 1
+D, [2013-10-17T15:44:35.686607 #21268] DEBUG -- :   [1m[36mSQL (8.0ms)[0m  [1mBEGIN[0m
+D, [2013-10-17T15:44:35.768611 #21268] DEBUG -- :   [1m[35mSQL (68.0ms)[0m  INSERT INTO `users` (`age`, `name`) VALUES (?, ?)  [["age", 22], ["name", "zhaoxiaoyan"]]
+D, [2013-10-17T15:44:35.768611 #21268] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+D, [2013-10-17T15:45:47.495714 #4272] DEBUG -- :   [1m[36mUser Load (33.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'zhaoxiaoyan' LIMIT 1[0m
+D, [2013-10-17T15:47:49.792709 #24332] DEBUG -- :   [1m[36mUser Load (8.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'zhaoxiaoyan' LIMIT 1[0m
+D, [2013-10-17T16:15:45.333544 #24212] DEBUG -- :   [1m[36mUser Load (11.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'zhaoxiaoyan' LIMIT 1[0m
+D, [2013-11-15T13:49:14.690191 #5656] DEBUG -- :   [1m[36mUser Load (20.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:49:38.014525 #21776] DEBUG -- :   [1m[36mUser Load (21.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:46:56.964313 #11652] DEBUG -- :   [1m[36mUser Load (37.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:47:08.199956 #11652] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T13:47:28.756132 #11652] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:50:16.627733 #21424] DEBUG -- :   [1m[36mUser Load (20.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:50:22.696081 #21424] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T13:51:06.854606 #21424] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:51:06.878608 #21424] DEBUG -- :   [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T13:51:08.860721 #21424] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:51:08.864721 #21424] DEBUG -- :   [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T13:51:10.258801 #21424] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T13:51:10.298803 #21424] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T14:35:19.345320 #22432] DEBUG -- :   [1m[36mUser Load (27.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T14:35:26.484728 #22432] DEBUG -- :   [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:35:26.490729 #22432] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:40:00.468399 #22432] DEBUG -- :   [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:40:00.473400 #22432] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:40:21.736616 #18592] DEBUG -- :   [1m[36mUser Load (23.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T14:40:29.989088 #18592] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:40:29.994088 #18592] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:40:33.009261 #18592] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:40:33.013261 #18592] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:40:34.953372 #18592] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:40:34.958372 #18592] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:41:06.203159 #20568] DEBUG -- :   [1m[36mUser Load (26.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T14:41:13.878598 #20568] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:41:13.883598 #20568] DEBUG -- :   [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:41:17.296794 #20568] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:41:17.301794 #20568] DEBUG -- :   [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:41:18.604869 #20568] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:41:18.609869 #20568] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:41:19.615926 #20568] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:41:19.620927 #20568] DEBUG -- :   [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T14:59:10.610184 #14800] DEBUG -- :   [1m[36mUser Load (23.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T14:59:46.260223 #14800] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T14:59:46.265223 #14800] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T15:00:12.343715 #5756] DEBUG -- :   [1m[36mUser Load (20.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:00:48.695794 #5756] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T15:00:48.699794 #5756] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T15:29:25.082966 #20624] DEBUG -- :   [1m[36mUser Load (22.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:31:07.928848 #20624] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T15:31:07.932848 #20624] DEBUG -- :   [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T15:31:22.565685 #20624] DEBUG -- :   [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 3]]
+D, [2013-11-15T15:31:22.571686 #20624] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 8]]
+D, [2013-11-15T15:32:26.435338 #4160] DEBUG -- :   [1m[36mUser Load (23.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:32:26.454339 #4160] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T15:35:55.196279 #21248] DEBUG -- :   [1m[36mUser Load (22.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:35:55.215280 #21248] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T15:35:55.219280 #21248] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:37:04.078219 #18720] DEBUG -- :   [1m[36mUser Load (23.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]
+D, [2013-11-15T15:37:04.097220 #18720] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 8]]
+D, [2013-11-15T15:37:04.123221 #18720] DEBUG -- :   [1m[36mUser Load (21.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 3]]

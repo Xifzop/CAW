@@ -1,0 +1,11 @@
+db_config:
+    adapter: mysql
+    user: root
+    password: 
+    database: 
+    host: localhost
+    log: 1
+meta:
+    DEBUG: 1
+    DAO_DIR: ./dao/
+    DAO_POSTFIX: .rb
