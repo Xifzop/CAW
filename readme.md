@@ -1,4 +1,4 @@
-##web框架说明
+﻿##web框架说明
 ***
 ***10:11 下午 星期四, 十一月 14, 2013***
 
@@ -81,8 +81,8 @@
 这次的Ruby实现的MVC一方面是出于动手的习惯，另一方面也是由于尽管Ruby on Rails提供了较为完备的功能集，却使得其较为笨重，（好吧关于这些可以去搜一搜关于Ruby社区内去rails化的一些讨论，尽管对于开发中小型的项目）也不利于有的快速项目开发者速成，其他方面原因没有想到太多。
 
 
-[项目主页]: http://www.foo.com "CAW的主页"
-[CAW]: http://www.foo.com "CAW的主页"
+[项目主页]: https://github.com/Xifzop/CAW "CAW的主页"
+[CAW]: https://github.com/Xifzop/CAW "CAW的主页"
 [MVC]: http://zh.wikipedia.org/wiki/MVC "关于MVC"
 [MVC is a lie...]: http://activedeveloper.info/mvc-is-a-lie.html "MVC-is-a-lie"
 [Mongrel]: https://github.com/mongrel/mongrel "Mongrel"
