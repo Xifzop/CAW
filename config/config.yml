@@ -5,6 +5,8 @@ db_config:
     database: 
     host: localhost
     log: 1
+    pool: 30
+    timeout: 6000
 meta:
     DEBUG: 1
     DAO_DIR: ./dao/

@@ -1,0 +1,27 @@
+body {
+	background-color: #555;
+}
+
+.editor_frame {
+	margin: 5px;
+}
+
+.editor {
+	padding: 15px;
+	color: #999;
+	background-color: #eee;
+	height: auto;
+	margin-bottom: 5px;
+	font: "微软雅黑", "Arial";
+}
+
+.editor_btnbar {
+	display: none;
+}
+
+#fileupload {
+	border:1px solid #000;
+}
+.clear{clear:both;}
+.ehdel_upload_show input{float:left; margin-top:10px;}
+.ehdel_upload{float:left;margin-top:-20px; *margin-top:-40px; filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}

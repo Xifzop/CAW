@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bootstrap 101 Template</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/editor.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.fileupload.css">
+  <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+  <!-- CSS adjustments for browsers with JavaScript disabled -->
+  <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
+  <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="span12 editor_frame">
+      <div class="row">
+        <div id="editor" class="hero-unit editor" contenteditable="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <div id="editor_bar" class="btn-group editor_btnbar">
+
+            <button id="insert_pic_btn" class="btn" type="button">
+              <em class="icon-picture">
+              </em>
+            </button>
+
+            <button id="post_answer_btn" class="btn" type="button" href="#modal-container-912346" role="button" data-toggle="modal">
+              <em class="icon-check">
+              </em>
+            </button>
+
+
+            <input style="display: none;" id="fileupload" type="file" accept="image/png,image/jpeg,image/gif" name="files[]" data-url="/index" multiple>
+            <div id="btns">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+                               <div class="row">
+                <div class="span4">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn" href="#">View details &raquo;</a></p>
+								</div>
+							  </div>-->
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/editor.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        init_editor();
+    };
+</script>
+
+<script>
+    $(function () {
+        $('#fileupload').fileupload({
+            dataType: 'html',
+
+/*            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .bar').css(
+                        'width',
+                        progress + '%'
+                );
+            },*/
+
+            add: function (e, data) {
+                var total_size = 0;
+                $.each(data.files, function (index, file) {
+                    valid_types = ['image/jpeg','image/png','image/gif'];
+                    if(jQuery.inArray(file.type, valid_types)<0){
+                        alert('必须是图片!');
+                        return;
+                    }
+                    total_size = total_size + file.size;
+                });
+
+                if(total_size>1000000){//1mb
+                    alert("上传文件过大，最多1MB.");
+                }
+                else{
+                    data.submit()
+                }
+            },
+
+            done: function (e, data) {
+                console.log(data.result);
+                var editor = document.getElementById('editor');
+                img = "<img style='height: 200px;' src='" + data.result + "' alt='Picture Not Found.' />";
+                if(editor.innerHTML!='My answer is ..'){
+                    editor.innerHTML = editor.innerHTML + "<p></p>" + img;
+                }else{
+                    editor.innerHTML = img;
+                }
+                /*$.each(data.result.files, function (index, file) {
+                    $('<p/>').text(data.result).appendTo(document.body);
+                    var editor = document.getElementById('editor');
+                    img = "<img style='height: 200px;' src='server/php/files/" + file.name + "' alt='Picture Not Found.' />";
+                    if(editor.innerHTML!='My answer is ...'){
+                        editor.innerHTML = editor.innerHTML + "<p></p>" + img;
+                    }else{
+                        editor.innerHTML = img;
+                    }
+                });*/
+            }
+
+        });
+    });
+</script>
+</body>
+</html>

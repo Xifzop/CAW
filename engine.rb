@@ -1,13 +1,10 @@
-
-activate = lambda{
-    current = Dir.pwd
-    Dir.chdir './controller'
-    exec('ruby controller.rb')
-    Dir.chdir current
-}
+require_relative 'cmds'
+include Commands
 
 FUNCTIONS = {
-    :launch => activate
+    :launch => Commands::ACTIVATE,
+    :default => lambda{},
 }
 
-FUNCTIONS[ARGV[0].to_sym].call unless ARGV[0].nil?
+ACTION = ARGV[0].to_sym unless ARGV[0].nil?
+FUNCTIONS[ACTION].call

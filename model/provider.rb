@@ -1,3 +1,4 @@
+#encoding=utf-8
 module Provider
     require_relative 'init'
     VAR_POOL = {
@@ -8,10 +9,17 @@ module Provider
             s = 1+1
             vars = {
                 :name =>  name,
+                :q => '什么'.encoding,
                 :result => s
             }
         },
+
+        :editor => lambda { |params|
+            vars = {}
+        }
     }
+
+
 
     #if the layout of page is not set here, then it is set to default as layout.erb as its layout template
     LAYOUT = {
